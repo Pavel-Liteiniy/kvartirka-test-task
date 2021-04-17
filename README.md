@@ -1,3 +1,10 @@
+# Тестовое задание для [Kvartirka](https://kvartirka.com/)
+
+### [Задание](https://docs.google.com/document/d/11uqfnyKGSZI2mVDNDpb105YvypdUor4gHmQZx2wdYeA/edit?usp=sharing)
+### [Макет в Figma](https://www.figma.com/file/E5j4hRs09A5tr17AMH7MXO/Armaggedon-V-(Copy)?node-id=0%3A1)
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
