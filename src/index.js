@@ -1,17 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+import './sass/variables.scss'
+import './sass/fonts.scss'
+import './sass/base.scss'
+import './sass/wrapper.scss'
+
+import Header from './components/header'
+import Footer from './components/footer'
+import Navigation from './components/navigation'
+import AsteroidsList from './components/asteroids-list'
+import AsteroidCard from './components/asteroid-card'
+import Popup from './components/popup'
+import RedButton from './components/red-button'
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Header>
+      <Navigation />
+    </Header>
+    <main>
+      <AsteroidsList>
+        <AsteroidCard />
+        <AsteroidCard />
+        <AsteroidCard />
+      </AsteroidsList>
+      <Popup />
+      <RedButton />
+    </main>
+    <Footer />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById( 'root' )
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

@@ -1,0 +1,203 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+.asteroid-card {
+	@include for_mobile {
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: stretch;
+
+		padding: 144px 0 15px;
+
+		background-position: 50% 0;
+		background-size: 100% 144px;
+		background-repeat: no-repeat;
+	}
+
+	position: relative;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+
+	padding: 23px 23px 30px;
+	padding-left: 244px;
+
+	background: $gradient_safety;
+
+	border: $border_default;
+	border-radius: 10px;
+
+	&--dangerous {
+		@include for_mobile {
+			background-position: 50% 0;
+			background-size: 100% 144px;
+			background-repeat: no-repeat;
+		}
+
+		background: $gradient_danger;
+	}
+}
+
+.asteroid-card__data {
+	@include for_mobile {
+		max-width: 100%;
+		padding: 0 $basic_padding;
+		margin: -40px 0 10px;
+	}
+
+	flex-grow: 1;
+	max-width: 329px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.asteroid-card__header {
+	@include for_mobile {
+		margin: 0 0 25px;
+	}
+
+	width: 100%;
+	margin: 0 0 17px;
+
+	text-transform: uppercase;
+
+	a {
+		@include only_desktop {
+			&:hover,
+			&:focus {
+				opacity: $hover_opacity;
+			}
+
+			&:active {
+				opacity: $active_opacity;
+			}
+		}
+
+		font-size: $title_font_size;
+		line-height: $title_line_height;
+
+		color: $black;
+	}
+}
+
+.asteroid-card__spec {
+	padding: 0;
+	margin: 0;
+
+	line-height: $extra_line_height;
+
+	list-style: none;
+
+	li {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+
+		margin-bottom: 8px;
+
+		span:first-child {
+			text-align: left;
+		}
+
+		span:last-child {
+			text-align: right;
+		}
+
+		div {
+			flex-grow: 1;
+			min-width: 20px;
+			margin-bottom: 7px;
+
+			border-bottom: $border_dotted;
+		}
+	}
+}
+
+.asteroid-card__instructions {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	flex-shrink: 0;
+	padding-bottom: 6px;
+}
+
+.asteroid-card__status {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+
+	margin: 0 0 7px;
+
+	span {
+		margin: 3px 0;
+
+		font-weight: bold;
+	}
+}
+
+.asteroid-card__add-to-cart {
+	@include only_desktop {
+		&:hover,
+		&:focus {
+			opacity: $hover_opacity;
+		}
+
+		&:active {
+			opacity: $active_opacity;
+		}
+	}
+
+	display: block;
+
+	padding: 14px 18px;
+
+	text-align: center;
+	text-decoration: none;
+
+	color: $white;
+	background-color: $blue;
+
+	border-radius: 24px;
+}
+
+.asteroid-card__icon {
+	position: absolute;
+
+	&--asteroid {
+		@include for_mobile {
+			top: 83px;
+			right: 199px;
+			left: auto;
+
+			width: 61px;
+			height: 62px;
+
+			transform: translateY(-100%);
+		}
+
+		bottom: 50%;
+		left: 121px;
+	}
+
+	&--dino {
+		@include for_mobile {
+			top: 144px;
+			right: 7px;
+			left: auto;
+
+			width: 35px;
+			height: 30px;
+
+			transform: scaleX(-1) translateY(-100%);
+		}
+
+		bottom: 0;
+		left: 15px;
+	}
+}

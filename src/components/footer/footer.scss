@@ -1,0 +1,25 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+.footer__wrapper {
+	@include for_mobile {
+		padding-top: 17px;
+		padding-bottom: 23px;
+	}
+
+	padding-top: 43px;
+	padding-bottom: 47px;
+}
+
+.footer__copyright {
+	@include for_mobile {
+		padding-right: 5px;
+
+		line-height: $extra_line_height;
+	}
+
+	padding-right: 50px;
+	margin: 0;
+
+	text-align: center;
+}

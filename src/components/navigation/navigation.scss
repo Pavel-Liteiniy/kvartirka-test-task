@@ -1,0 +1,49 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+.navigation__list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	padding: 0;
+	margin: 0;
+
+	list-style: none;
+}
+
+.navigation__item {
+	a {
+		@include for_mobile {
+			padding: 5px 0;
+			margin: 4px 27px 4px 0;
+		}
+
+		display: block;
+
+		padding: 5px;
+		margin: 4px 0 4px 18px;
+
+		color: $black;
+	}
+
+	&--selected {
+		a {
+			font-weight: bold;
+			text-decoration: none;
+		}
+	}
+
+	&:not(.navigation__item--selected) {
+		@include only_desktop {
+			a:hover,
+			a:focus {
+				opacity: $hover_opacity;
+			}
+
+			a:active {
+				opacity: $active_opacity;
+			}
+		}
+	}
+}
