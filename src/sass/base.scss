@@ -1,0 +1,41 @@
+@import 'variables';
+
+.visually-hidden {
+	position: absolute;
+
+	overflow: hidden;
+	clip: rect(1px 1px 1px 1px);
+
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: 0;
+
+	border: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: $font_family_helvetica;
+	font-size: $basic_font_size;
+	line-height: $basic_line_height;
+
+	color: $black;
+}
+
+main {
+	min-width: $breakpoint_mobile;
+}
+
+a,
+button,
+label,
+input,
+select {
+	cursor: pointer;
+}

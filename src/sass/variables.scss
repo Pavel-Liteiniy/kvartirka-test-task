@@ -1,0 +1,41 @@
+$font_family_helvetica: 'helvetica', 'arial', sans-serif;
+
+$header_mobile_font_size: 24px;
+$header_mobile_line_height: 48px;
+
+$title_font_size: 24px;
+$title_line_height: 32px;
+
+$basic_font_size: 16px;
+$basic_line_height: 20px;
+$extra_line_height: 24px;
+
+$white: #fff;
+$black: #000;
+$blue: #186dd6;
+$yellow_toxic: #cff37d;
+$green_toxic: #7de88c;
+$coral: #ffb199;
+$red: #ff0844;
+
+$hover_opacity: 0.6;
+$active_opacity: 0.3;
+
+$gradient_safety: linear-gradient(90deg, $yellow_toxic 0%, $green_toxic 100%);
+$gradient_danger: linear-gradient(90deg, $coral 0%, $red 100%);
+
+$border_default: 1px solid $black;
+$border_dotted: 1px dotted $black;
+$border_checkboxbox: 2px solid rgba($black, 0.87);
+
+$breakpoint_mobile: 320px;
+$breakpoint_tablet: 768px;
+$breakpoint_desktop: 1024px;
+
+$basic_padding: 16px;
+
+$content_width_mobile: 288px + $basic_padding * 2;
+$content_width_deskop: 920px + $basic_padding * 2;
+
+$retina_dppx: 1.5dppx;
+$retina_dpi: 144dpi;

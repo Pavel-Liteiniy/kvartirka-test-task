@@ -1,0 +1,19 @@
+@font-face {
+	font-family: 'helvetica';
+	font-style: normal;
+	font-weight: normal;
+
+	font-display: swap;
+	src: local('helvetica regular'), local('helvetica-regular'), url('../fonts/helvetica-regular.woff2') format('woff2'),
+		url('../fonts/helvetica-regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'helvetica';
+	font-style: normal;
+	font-weight: bold;
+
+	font-display: swap;
+	src: local('helvetica bold'), local('helvetica-bold'), url('../fonts/helvetica-bold.woff2') format('woff2'),
+		url('../fonts/helvetica-bold.woff') format('woff');
+}
