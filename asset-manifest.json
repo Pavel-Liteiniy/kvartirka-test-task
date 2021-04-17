@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/kvartirka-test-task/static/css/main.7c8e6704.chunk.css",
+    "main.js": "/kvartirka-test-task/static/js/main.feff95bc.chunk.js",
+    "main.js.map": "/kvartirka-test-task/static/js/main.feff95bc.chunk.js.map",
+    "runtime-main.js": "/kvartirka-test-task/static/js/runtime-main.929e3c13.js",
+    "runtime-main.js.map": "/kvartirka-test-task/static/js/runtime-main.929e3c13.js.map",
+    "static/js/2.d2f23c0b.chunk.js": "/kvartirka-test-task/static/js/2.d2f23c0b.chunk.js",
+    "static/js/2.d2f23c0b.chunk.js.map": "/kvartirka-test-task/static/js/2.d2f23c0b.chunk.js.map",
+    "index.html": "/kvartirka-test-task/index.html",
+    "static/css/main.7c8e6704.chunk.css.map": "/kvartirka-test-task/static/css/main.7c8e6704.chunk.css.map",
+    "static/js/2.d2f23c0b.chunk.js.LICENSE.txt": "/kvartirka-test-task/static/js/2.d2f23c0b.chunk.js.LICENSE.txt",
+    "static/media/asteroid.308fb251.svg": "/kvartirka-test-task/static/media/asteroid.308fb251.svg",
+    "static/media/dino.2faf6d60.svg": "/kvartirka-test-task/static/media/dino.2faf6d60.svg",
+    "static/media/fonts.scss": "/kvartirka-test-task/static/media/helvetica-regular.c65155c6.woff2",
+    "static/media/logo-desktop.19839b6e.svg": "/kvartirka-test-task/static/media/logo-desktop.19839b6e.svg",
+    "static/media/logo-mobile.b1ba1b23.svg": "/kvartirka-test-task/static/media/logo-mobile.b1ba1b23.svg",
+    "static/media/space-ship.174fa7de.svg": "/kvartirka-test-task/static/media/space-ship.174fa7de.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.929e3c13.js",
+    "static/js/2.d2f23c0b.chunk.js",
+    "static/css/main.7c8e6704.chunk.css",
+    "static/js/main.feff95bc.chunk.js"
+  ]
+}
