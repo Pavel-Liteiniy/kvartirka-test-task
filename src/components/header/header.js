@@ -1,8 +1,8 @@
-import React from 'react';
-import logoDesktop from './img/logo-desktop.svg';
-import logoMobile from './img/logo-mobile.svg';
+import React from 'react'
+import logoDesktop from './img/logo-desktop.svg'
+import logoMobile from './img/logo-mobile.svg'
 
-import './header.scss';
+import './header.scss'
 
 const Header = ( { children } ) => {
   return (
@@ -19,7 +19,7 @@ const Header = ( { children } ) => {
         { children }
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

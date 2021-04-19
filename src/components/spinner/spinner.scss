@@ -1,0 +1,27 @@
+@import "../../sass/variables";
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.spinner__wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.spinner__icon {
+	animation: rotate 2s linear infinite;
+}
+
+.spinner__description {
+	font-size: $title_font_size;
+	line-height: $title_line_height;
+	text-align: center;
+}

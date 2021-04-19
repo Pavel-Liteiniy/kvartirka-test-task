@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-import './popup.scss';
+import './popup.scss'
 
 const Popup = () => {
   return (
@@ -23,4 +23,4 @@ const Popup = () => {
   );
 };
 
-export default Popup;
+export default Popup

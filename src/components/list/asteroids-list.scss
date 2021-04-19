@@ -1,0 +1,143 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+.asteroids-list__wrapper {
+	padding-top: 0;
+}
+
+.asteroids-list__settings-list {
+	@include for_mobile {
+		padding: 6px 0 4px;
+	}
+
+	padding: 10px 0 6px;
+
+	border-top: $border_default;
+
+	form {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.asteroids-list__settings-item {
+	@include for_mobile {
+		margin: 5px 0;
+	}
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	margin: 17px 0;
+
+	&--checkbox {
+		@include only_desktop {
+			label:hover,
+			input:focus + label {
+				opacity: $hover_opacity;
+			}
+
+			label:active {
+				opacity: $active_opacity;
+			}
+		}
+
+		margin-right: 17px;
+
+		label {
+			position: relative;
+
+			padding-left: 28px;
+
+			&::before {
+				position: absolute;
+				top: 0;
+				left: 0;
+
+				width: 18px;
+				height: 18px;
+
+				content: '';
+
+				border: $border_checkboxbox;
+				border-radius: 3px;
+			}
+		}
+
+		input:checked + label {
+			font-weight: bold;
+
+			&::after {
+				position: absolute;
+				top: 5px;
+				left: 5px;
+
+				width: 8px;
+				height: 8px;
+
+				content: '';
+
+				background-color: $black;
+
+				border: $border_checkboxbox;
+				border-radius: 50%;
+			}
+		}
+	}
+
+	&--unit {
+		@include for_mobile {
+			margin: 11px 0;
+
+			line-height: $extra_line_height;
+		}
+		@include only_desktop {
+			input:not(:checked) + label:hover {
+				opacity: $hover_opacity;
+			}
+
+			input:not(:checked) + label:active {
+				opacity: $active_opacity;
+			}
+		}
+
+		label {
+			text-decoration: underline;
+			&:not(:last-of-type) {
+				margin-right: 10px;
+			}
+
+			&:first-of-type {
+				margin-left: 5px;
+			}
+		}
+
+		input:checked + label {
+			font-weight: bold;
+			text-decoration: none;
+		}
+	}
+}
+
+.asteroids-list__list {
+	padding: 0;
+	margin: 0;
+
+	list-style: none;
+
+	.asteroids-list__item {
+		&:not(:last-child) {
+			@include for_mobile {
+				margin-bottom: 19px;
+			}
+
+			margin-bottom: 16px;
+		}
+	}
+}

@@ -1,3 +1,3 @@
-import RedButton from './red-button';
+import RedButton from './red-button'
 
-export default RedButton;
+export default RedButton

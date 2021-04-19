@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-import './footer.scss';
+import './footer.scss'
 
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
         <p className="footer__copyright">2021 © Все права и планета защищены</p>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

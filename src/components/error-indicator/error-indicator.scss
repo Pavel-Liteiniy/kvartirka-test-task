@@ -1,0 +1,15 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+
+.error-indicator__wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.error-indicator__description {
+	font-size: $title_font_size;
+	line-height: $title_line_height;
+	text-align: center;
+}

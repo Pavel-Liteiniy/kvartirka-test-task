@@ -29,6 +29,8 @@
 	border: $border_default;
 	border-radius: 10px;
 
+	overflow: hidden;
+
 	&--dangerous {
 		@include for_mobile {
 			background-position: 50% 0;
@@ -46,6 +48,8 @@
 		padding: 0 $basic_padding;
 		margin: -40px 0 10px;
 	}
+
+	z-index: 1;
 
 	flex-grow: 1;
 	max-width: 329px;
@@ -164,6 +168,10 @@
 	background-color: $blue;
 
 	border-radius: 24px;
+
+	&--added {
+		background-color: $black;
+	}
 }
 
 .asteroid-card__icon {
@@ -172,17 +180,18 @@
 	&--asteroid {
 		@include for_mobile {
 			top: 83px;
-			right: 199px;
+			right: 168px;
 			left: auto;
 
 			width: 61px;
 			height: 62px;
 
-			transform: translateY(-100%);
+			transform: translate(50%, -100%);
 		}
 
 		bottom: 50%;
-		left: 121px;
+		left: 157px;
+		transform: translate(-50%, 0);
 	}
 
 	&--dino {
