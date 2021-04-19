@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/kvartirka-test-task/static/css/main.7c8e6704.chunk.css",
-    "main.js": "/kvartirka-test-task/static/js/main.feff95bc.chunk.js",
-    "main.js.map": "/kvartirka-test-task/static/js/main.feff95bc.chunk.js.map",
+    "main.css": "/kvartirka-test-task/static/css/main.153717c9.chunk.css",
+    "main.js": "/kvartirka-test-task/static/js/main.dfaae6b5.chunk.js",
+    "main.js.map": "/kvartirka-test-task/static/js/main.dfaae6b5.chunk.js.map",
     "runtime-main.js": "/kvartirka-test-task/static/js/runtime-main.929e3c13.js",
     "runtime-main.js.map": "/kvartirka-test-task/static/js/runtime-main.929e3c13.js.map",
-    "static/js/2.d2f23c0b.chunk.js": "/kvartirka-test-task/static/js/2.d2f23c0b.chunk.js",
-    "static/js/2.d2f23c0b.chunk.js.map": "/kvartirka-test-task/static/js/2.d2f23c0b.chunk.js.map",
+    "static/js/2.5d067371.chunk.js": "/kvartirka-test-task/static/js/2.5d067371.chunk.js",
+    "static/js/2.5d067371.chunk.js.map": "/kvartirka-test-task/static/js/2.5d067371.chunk.js.map",
     "index.html": "/kvartirka-test-task/index.html",
-    "static/css/main.7c8e6704.chunk.css.map": "/kvartirka-test-task/static/css/main.7c8e6704.chunk.css.map",
-    "static/js/2.d2f23c0b.chunk.js.LICENSE.txt": "/kvartirka-test-task/static/js/2.d2f23c0b.chunk.js.LICENSE.txt",
+    "static/css/main.153717c9.chunk.css.map": "/kvartirka-test-task/static/css/main.153717c9.chunk.css.map",
+    "static/js/2.5d067371.chunk.js.LICENSE.txt": "/kvartirka-test-task/static/js/2.5d067371.chunk.js.LICENSE.txt",
     "static/media/asteroid.308fb251.svg": "/kvartirka-test-task/static/media/asteroid.308fb251.svg",
+    "static/media/astronaut.546a10eb.svg": "/kvartirka-test-task/static/media/astronaut.546a10eb.svg",
     "static/media/dino.2faf6d60.svg": "/kvartirka-test-task/static/media/dino.2faf6d60.svg",
     "static/media/fonts.scss": "/kvartirka-test-task/static/media/helvetica-regular.c65155c6.woff2",
     "static/media/logo-desktop.19839b6e.svg": "/kvartirka-test-task/static/media/logo-desktop.19839b6e.svg",
@@ -19,8 +20,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.929e3c13.js",
-    "static/js/2.d2f23c0b.chunk.js",
-    "static/css/main.7c8e6704.chunk.css",
-    "static/js/main.feff95bc.chunk.js"
+    "static/js/2.5d067371.chunk.js",
+    "static/css/main.153717c9.chunk.css",
+    "static/js/main.dfaae6b5.chunk.js"
   ]
 }
