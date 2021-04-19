@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/kvartirka-test-task/static/css/main.153717c9.chunk.css",
-    "main.js": "/kvartirka-test-task/static/js/main.dfaae6b5.chunk.js",
-    "main.js.map": "/kvartirka-test-task/static/js/main.dfaae6b5.chunk.js.map",
+    "main.js": "/kvartirka-test-task/static/js/main.524f03ac.chunk.js",
+    "main.js.map": "/kvartirka-test-task/static/js/main.524f03ac.chunk.js.map",
     "runtime-main.js": "/kvartirka-test-task/static/js/runtime-main.929e3c13.js",
     "runtime-main.js.map": "/kvartirka-test-task/static/js/runtime-main.929e3c13.js.map",
     "static/js/2.5d067371.chunk.js": "/kvartirka-test-task/static/js/2.5d067371.chunk.js",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.929e3c13.js",
     "static/js/2.5d067371.chunk.js",
     "static/css/main.153717c9.chunk.css",
-    "static/js/main.dfaae6b5.chunk.js"
+    "static/js/main.524f03ac.chunk.js"
   ]
 }
