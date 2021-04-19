@@ -20,7 +20,7 @@ import { ContextProvider } from '../../context'
 import Api from '../../api/api'
 import { Page } from '../../const'
 
-const END_POINT = `https://api.nasa.gov/neo/rest/v1/`
+const END_POINT = `neo/rest/v1/`
 const API_KEY = `H1ghBeJyjvGt6MdSede0fvq1Owo50sASGlpmI5dO`
 
 export default class App extends Component {
