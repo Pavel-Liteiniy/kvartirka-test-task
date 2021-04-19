@@ -17,7 +17,7 @@ const RedButton = ( { killListChangeHandler } ) => {
             evt.preventDefault()
             killListChangeHandler( null, true )
           } }>
-          Заказать бригаду имени Брюса&nbspУиллиса
+          Заказать бригаду имени Брюса&nbsp;Уиллиса
         <SpaceShipIcon className="red-button__icon" />
         </a>
       </div>
