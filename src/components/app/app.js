@@ -14,7 +14,6 @@ import KillList from '../kill-list'
 import Popup from '../popup'
 import RedButton from '../red-button'
 import ErrorBoundry from '../error-boundry'
-import List from '../list'
 
 import { ContextProvider } from '../../context'
 import Api from '../../api/api'
@@ -45,7 +44,7 @@ export default class App extends Component {
                 <Navigation />
               </Header>
               <main>
-                <Route path={ `/` } render={ () => <List /> } exact />
+                <Route path={ `/` } render={ () => <AsteroidsList /> } exact />
                 <Route path={ `/kill-list` } render={ () => <KillList /> } />
               </main>
               <Footer />

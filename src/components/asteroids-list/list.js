@@ -19,7 +19,7 @@ const Activity = {
   ERROR: 'error',
 }
 
-const List = ( { api } ) => {
+const AteroidsList = ( { api } ) => {
   const asteroidReducer = ( state, action ) => {
     switch ( action.type ) {
       case Activity.STACK:
@@ -125,26 +125,6 @@ const List = ( { api } ) => {
 
   const { asteroids, settings, loading, error } = asteroidData
 
-  let listContent = []
-
-  if ( !error && !loading ) {
-    let filteredItems = asteroids
-
-    if ( settings.isDangerousOnly ) {
-      filteredItems = filteredItems.filter( item => item.isDanderous )
-    }
-
-    listContent = filteredItems.map( item => {
-      const { id } = item
-
-      return (
-        <li key={ id } className="asteroids-list__item">
-          <AsteroidCard data={ item } selectedUnit={ settings.selectedUnit } />
-        </li>
-      )
-    } )
-  }
-
   return (
     <section className="asteroids-list">
       <h2 className="visually-hidden">Список астероидов</h2>
@@ -184,11 +164,13 @@ const List = ( { api } ) => {
             </div>
           </form>
         </div>
-        { !error && !loading && <React.Fragment>
-          <ul className="asteroids-list__list">
-            { listContent }
-          </ul>
-        </React.Fragment> }
+        { asteroids.map( asteroid => {
+          if ( settings.isDangerousOnly && !asteroid.isDanderous ) {
+            return null
+          }
+
+          return <li key={ asteroid.id }><AsteroidCard data={ asteroid } selectedUnit={ settings.selectedUnit } /></li>
+        } ) }
         <div ref={ bottomBoundaryRef }></div>
         { loading && <Spinner /> }
         { error && <ErrorIndicator /> }
@@ -197,4 +179,4 @@ const List = ( { api } ) => {
   )
 }
 
-export default withContext( List )
+export default withContext( AteroidsList )

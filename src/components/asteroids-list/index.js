@@ -1,3 +1,3 @@
-import AsteroidsList from './asteroids-list'
+import AteroidsList from './list'
 
-export default AsteroidsList
+export default AteroidsList
