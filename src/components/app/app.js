@@ -10,6 +10,7 @@ import Header from '../header'
 import Footer from '../footer'
 import Navigation from '../navigation'
 import AsteroidsList from '../asteroids-list'
+import AsteroidDetailedCard from '../asteroid-detailed-card'
 import KillList from '../kill-list'
 import ErrorBoundry from '../error-boundry'
 
@@ -44,6 +45,7 @@ export default class App extends Component {
               <main>
                 <Route path={ `/` } render={ () => <AsteroidsList /> } exact />
                 <Route path={ `/kill-list` } render={ () => <KillList /> } />
+                <Route path={ `/:id` } render={ ( { match } ) => <AsteroidDetailedCard asteroidId={ match.params.id } /> } />
               </main>
               <Footer />
             </Router>
