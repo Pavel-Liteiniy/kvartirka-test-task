@@ -11,8 +11,6 @@ import Footer from '../footer'
 import Navigation from '../navigation'
 import AsteroidsList from '../asteroids-list'
 import KillList from '../kill-list'
-import Popup from '../popup'
-import RedButton from '../red-button'
 import ErrorBoundry from '../error-boundry'
 
 import { ContextProvider } from '../../context'

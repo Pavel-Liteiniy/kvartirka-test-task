@@ -62,9 +62,9 @@ const AsteroidCard = ( { data, selectedUnit, killList, killListChangeHandler } )
       </div>
       <div className="asteroid-card__instructions">
         <p className="asteroid-card__status">Оценка: <span>{ isDanderous ? `опасен` : `не опасен` }</span></p>
-        <a
+        <button
           className={ `asteroid-card__add-to-cart${isNeedToKill ? ` asteroid-card__add-to-cart--added` : ``}` }
-          onClick={ () => killListChangeHandler( data ) }>{ isNeedToKill ? `Будет уничтожен` : `На уничтожение` }</a>
+          onClick={ () => killListChangeHandler( data ) }>{ isNeedToKill ? `Будет уничтожен` : `На уничтожение` }</button>
       </div>
       <AsteroidIcon
         className="asteroid-card__icon asteroid-card__icon--asteroid"

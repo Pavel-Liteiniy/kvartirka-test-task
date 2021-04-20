@@ -98,7 +98,7 @@ const AteroidsList = ( { api } ) => {
         asteroidDispatch( { type: Activity.ERROR, error } )
       } )
 
-  }, [ asteroidDispatch, date.day ] )
+  }, [ asteroidDispatch, date.day, api ] )
 
   let bottomBoundaryRef = useRef( null )
   const scrollObserver = useCallback(
@@ -164,13 +164,15 @@ const AteroidsList = ( { api } ) => {
             </div>
           </form>
         </div>
-        { asteroids.map( asteroid => {
-          if ( settings.isDangerousOnly && !asteroid.isDanderous ) {
-            return null
-          }
+        <ul className="asteroids-list__list">
+          { asteroids.map( asteroid => {
+            if ( settings.isDangerousOnly && !asteroid.isDanderous ) {
+              return null
+            }
 
-          return <li key={ asteroid.id }><AsteroidCard data={ asteroid } selectedUnit={ settings.selectedUnit } /></li>
-        } ) }
+            return <li className="asteroids-list__item" key={ asteroid.id }><AsteroidCard data={ asteroid } selectedUnit={ settings.selectedUnit } /></li>
+          } ) }
+        </ul>
         <div ref={ bottomBoundaryRef }></div>
         { loading && <Spinner /> }
         { error && <ErrorIndicator /> }
