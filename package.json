@@ -1,6 +1,5 @@
 {
 	"name": "kvartirka",
-	"homepage": "https://pavel-liteiniy.github.io/kvartirka-test-task/",
 	"version": "0.1.0",
 	"private": true,
 	"proxy": "https://api.nasa.gov/",
