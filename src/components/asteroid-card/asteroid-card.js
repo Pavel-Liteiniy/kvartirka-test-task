@@ -40,7 +40,7 @@ const AsteroidCard = ( { data, selectedUnit, killList, killListChangeHandler } )
     <div className={ `asteroid-card${isDanderous ? ` asteroid-card--dangerous` : ``}` }>
       <div className="asteroid-card__data">
         <h3 className="asteroid-card__header">
-          <Link to={ `/${id}` }>{ nameMatches[ 1 ] }</Link>
+          <Link to={ `/asteroid/${id}` }>{ nameMatches[ 1 ] }</Link>
         </h3>
         <ul className="asteroid-card__spec">
           <li>

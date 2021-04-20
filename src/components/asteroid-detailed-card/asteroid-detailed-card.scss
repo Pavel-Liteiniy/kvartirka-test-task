@@ -21,7 +21,7 @@
 
 .asteroid-detailed-card__settings-item {
 	@include for_mobile {
-		margin: 5px 0;
+		margin: 5px 0 5px auto;
 	}
 
 	display: flex;
@@ -30,7 +30,7 @@
 	justify-content: flex-start;
 	align-items: flex-start;
 
-	margin: 17px 0;
+	margin: 17px 0 17px auto;
 
 	&--checkbox {
 		@include only_desktop {

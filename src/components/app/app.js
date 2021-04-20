@@ -18,7 +18,7 @@ import { ContextProvider } from '../../context'
 import Api from '../../api/api'
 import { Page } from '../../const'
 
-const END_POINT = `neo/rest/v1/`
+const END_POINT = `https://api.nasa.gov/neo/rest/v1`
 const API_KEY = `H1ghBeJyjvGt6MdSede0fvq1Owo50sASGlpmI5dO`
 
 export default class App extends Component {
@@ -45,7 +45,7 @@ export default class App extends Component {
               <main>
                 <Route path={ `/` } render={ () => <AsteroidsList /> } exact />
                 <Route path={ `/kill-list` } render={ () => <KillList /> } />
-                <Route path={ `/:id` } render={ ( { match } ) => <AsteroidDetailedCard asteroidId={ match.params.id } /> } />
+                <Route path={ `/asteroid/:id` } render={ ( { match } ) => <AsteroidDetailedCard asteroidId={ match.params.id } /> } />
               </main>
               <Footer />
             </Router>
